@@ -1,0 +1,433 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Monster</title>
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/addIndicators.min.js"></script>
+<script src = "js/elevator.js"></script>
+<script language="javascript" type="text/javascript">
+		var controller = new ScrollMagic.Controller();
+</script>
+        <script language="javascript" type="text/javascript">
+			window.onload = function() {
+  				var elevator = new Elevator({
+   				element: document.querySelector('#elevator'),
+    			duration: 5000, // milliseconds
+				mainAudio: 'resources/elevator-music.mp3',
+				endAudio: 'resources/ding.mp3'
+  				});
+			}
+</script>
+
+<script language="javascript" type = "text/javascript">
+		var pos = $(document).scrollTop();
+</script>
+
+</head>
+
+<body style = "text-align:center;">
+    <div class = "player">
+    	<audio controls>
+        	<source src = "resources/monster.mp3" type = "audio/mpeg">
+        </audio>
+    </div>
+	<div class = "leftsidebar"></div>
+
+    <div class = "middletext">
+        <p id = "header">Monster</p>
+
+        <img src = "images/big-monster.png">
+
+
+        <div class = "lyrics" id ="first"><p class = "boniver">I shoot the lights out <br>
+        Hide til its bright out<br>
+        Whoa, just another lonely night<br>
+        Are you willing to sacrifice your life?</p>
+        <p class = "rickross">Bitch I’m a monster<br>
+        no good blood sucker<br>
+        fat motherfucker <br>
+        now look who’s in trouble<br>
+        as you run through my jungle <br>
+        all you hear is rumbles<br>
+        Kanye West sample, <br>
+        here’s one for example</p></div>
+
+		<script language = "javascript" type = "text/javascript">
+        var controller = new ScrollMagic.Controller();
+		var scene1 = new ScrollMagic.Scene({
+  		triggerElement: "#first", // point of execution
+ 		duration: $(window).height(), // pin element for the window height - 1
+  		triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
+ 		reverse: true // allows the effect to trigger when scrolled in the reverse direction
+		})
+		.setPin("#first") // the element we want to pin
+		.addTo(controller);
+        </script>
+
+
+        <div class = "lyrics" id = "second">
+        <p class = "kanye">Gossip gossip
+        nigga just stop it<br>
+        everybody know (I’m a motherfucking monster)<br>
+        I’ma need to see your fucking hands at the concert<br>
+        I’ma need to see your fucking hands at the concert<br>
+        profit profit, nigga I got it<br>
+        everybody know I’m a motherfucking monster<br>
+        I’ma need to see your fucking hands at the concert<br>
+        I’ma need to see your fucking hands...</p>
+
+        <p class = "kanye">The best living or dead hands down huh?<br>
+        less talk more head right now huh?<br>
+        and my eyes more red than the devil is<br>
+        and I’m bout to take it to another level bitch<br>
+        none of who you go and get, <br>
+        ain't nobody's cold as this<br>
+        do the rap and attract triple double no assist<br>
+        but my only focus is staying on some bogus shit<br>
+        argue with my older bitch acting like I owe her shit<br></p>
+        </div>
+
+        <script language = "javascript" type = "text/javascript">
+        var scene2 = new ScrollMagic.Scene({
+  		triggerElement: "#second", // point of execution
+  		duration: $(window).height(),
+		triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
+ 		reverse: true  // pin the element for a total of 400px
+		})
+		.setPin("#second") // the element we want to pin
+		.addTo(controller);
+        </script>
+
+
+        <div class = "lyrics" id = "third">
+        <p class = "kanye">
+        I heard the people saying raps are <br>
+        getting trap mayne<br>
+        bought the chain that always give me back pain<br>
+        fucking up my money so yeah I had to act sane<br>
+        Shy nigga but these hoes love my accent<br>
+        she came up to me and said this the number 2 gal<br>
+        if you wanna make it number one <br>
+        your number 2 now<br>
+        this that goose an’ Malibu I call it Malibooya<br>
+        God damn Yeezy How I hit em with the new style<br>
+        know that motherfucker well, <br>
+        what you gonna do now<br>
+        whatever I wanna do, gosh it’s cool now <br>
+        nah gonna do, uh its a new now<br>
+        think you motherfucker really really <br>
+        need to cool down<br>
+        cause you will never get on top of this<br>
+        so mommy best advice is to get on top of this<br>
+        have you ever had sex with a pharaoh<br>
+        I put the pussy in a sarcophagus<br>
+        now she claiming that I bruise her esophagus<br>
+        head of the class and she just want a swallowship<br>
+        I’m living in the future so the present is my past<br>
+        my presence is a present kiss my ass<br></p>
+        </div>
+
+
+        <script type = "text/javascript" language = "javascript">
+
+		var scene3 = new ScrollMagic.Scene({
+  		triggerElement: "#third", // point of execution
+  		duration: $(window).height(),
+		triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
+ 		reverse: true  // pin the element for a total of 400px
+		})
+		.setPin("#third") // the element we want to pin
+		.addTo(controller);
+		</script>
+
+        <div class = "lyrics" id = "fourth">
+
+       <p class = "kanye">
+        Gossip gossip<br>
+        nigga just stop it<br>
+        everybody know (I’m a motherfucking monster)<br>
+        I’ma need to see your fucking hands at the concert<br>
+        I’ma need to see your fucking hands at the concert<br>
+        profit profit, nigga I got it<br>
+        everybody know I’m a motherfucking monster<br>
+        I’ma need to see your fucking hands at the concert<br>
+        I’ma need to see your fucking hands...</p>
+
+        <p class = "jayz">Sasquatch, Godzilla, King Kong <br>
+        Lochness, Goblin, Ghoul, <br>
+        a zombie with no conscience<br>
+        question what do all these things have in common<br>
+        </p>
+       	</div>
+
+        <script type = "text/javascript" language = "javascript">
+        var scene4 = new ScrollMagic.Scene({
+  		triggerElement: "#fourth", // point of execution
+  		duration: $(window).height(),
+		triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
+ 		reverse: true  // pin the element for a total of 400px
+		})
+		.setPin("#fourth") // the element we want to pin
+		.addTo(controller);
+        </script>
+
+        <div class = "lyrics" id = "fifth">
+
+        <p class = "jayz" id ="monster">everybody knows I’m a motherfucking monster</p>
+
+        </div>
+
+
+        <script type = "text/javascript"language = "javascript">
+
+		var scene5 = new ScrollMagic.Scene({
+  		triggerElement: "#fifth", // point of execution
+  		duration: $(window).height(),
+		triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
+ 		reverse: true  // pin the element for a total of 400px
+		})
+		.setPin("#fifth") // the element we want to pin
+		.addTo(controller);
+
+		</script>
+
+        <div class = "lyrics" id = "sixth">
+        <p class = "jayz">conquer, stomp ya, stop your silly nonsense<br>
+        nonsense, none of you niggas know where the swamp is<br>
+        none of you niggas have seen the carnage that I’ve seen<br>
+        I still hear fiends scream in my dreams<br>
+        murder murder in black convertibles<br>
+        I kill a block I murder avenues<br>
+        rape and pillage a village, women and children<br>
+        everybody wanna know what my Achilles' heel is</p>
+        </div>
+
+        <script type = "text/javascript"language = "javascript">
+		var scene6 = new ScrollMagic.Scene({
+  		triggerElement: "#sixth", // point of execution
+  		duration: $(window).height(),
+		triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
+ 		reverse: true  // pin the element for a total of 400px
+		})
+		.setPin("#sixth") // the element we want to pin
+		.addTo(controller);
+
+		</script>
+
+        <div class = "lyrics" id = "seventh">
+
+        <p class = "jayz" id ="love">Love</p>
+
+        </div>
+
+         <script type = "text/javascript"language = "javascript">
+		var scene7 = new ScrollMagic.Scene({
+  		triggerElement: "#seventh", // point of execution
+  		duration: $(window).height(),
+		triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
+ 		reverse: true  // pin the element for a total of 400px
+		})
+		.setPin("#seventh") // the element we want to pin
+		.addTo(controller);
+
+		</script>
+
+
+        <div class = "lyrics" id = "eighth">
+        <p class = "jayz">I don't get enough of it<br>
+        all I get is these vampires and blood suckers<br>
+        all I see is these niggas I’ve made millionaires<br>
+        milling about, spilling their feelings in the air<br>
+        all I see is these fake fucks with no fangs<br>
+        tryna draw blood from my ice cold veins<br>
+        I smell a massacre<br>
+        seems to be the only way to back you bastards up</p>
+        </div>
+
+        <script type = "text/javascript"language = "javascript">
+		var scene8 = new ScrollMagic.Scene({
+  		triggerElement: "#eighth", // point of execution
+  		duration: $(window).height(),
+		triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
+ 		reverse: true  // pin the element for a total of 400px
+		})
+		.setPin("#eighth") // the element we want to pin
+		.addTo(controller);
+		</script>
+
+
+        <div class = "lyrics" id = "ninth">
+        <p class = "kanye">
+        Gossip gossip<br>
+        nigga just stop it<br>
+        everybody know (I’m a motherfucking monster)<br>
+        I’ma need to see your fucking hands at the concert<br>
+        I’ma need to see your fucking hands at the concert<br>
+        profit profit, nigga I got it<br>
+        everybody know I’m a motherfucking monster<br>
+        I’ma need to see your fucking hands at the concert<br>
+        I’ma need to see your fucking hands...</p>
+        </div>
+
+        <script type = "text/javascript"language = "javascript">
+		var scene9 = new ScrollMagic.Scene({
+  		triggerElement: "#ninth", // point of execution
+  		duration: $(window).height(),
+		triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
+ 		reverse: true  // pin the element for a total of 400px
+		})
+		.setPin("#ninth") // the element we want to pin
+		.addTo(controller);
+		</script>
+
+
+        <div class = "lyrics" id = "tenth">
+        <p class = "nicki">Pull up in the monster<br>
+        automobile gangster<br>
+        with a bad bitch that came from Sri Lanka<br>
+        yeah I’m in that Tonka, color of Willy Wonka<br>
+        </p>
+        </div>
+
+        <script type = "text/javascript"language = "javascript">
+		var scene10 = new ScrollMagic.Scene({
+  		triggerElement: "#tenth", // point of execution
+  		duration: $(window).height(),
+		triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
+ 		reverse: true  // pin the element for a total of 400px
+		})
+		.setPin("#tenth") // the element we want to pin
+		.addTo(controller);
+		</script>
+
+        <div class = "lyrics" id = "eleventh">
+        <p class = "nicki" id = "queen">you could be the King but watch the Queen conquer</p>
+        </div>
+
+        <script type = "text/javascript"language = "javascript">
+		var scene11 = new ScrollMagic.Scene({
+  		triggerElement: "#eleventh", // point of execution
+  		duration: $(window).height(),
+		triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
+ 		reverse: true  // pin the element for a total of 400px
+		})
+		.setPin("#eleventh") // the element we want to pin
+		.addTo(controller);
+		</script>
+
+
+
+
+        <div class = "lyrics" id = "twelfth">
+        <p class = "nicki">
+        OK first things first I’ll eat your brains<br>
+        then I’mma start rocking gold teeth and fangs<br>
+        cause that’s what a motherfucking monster do<br>
+        hairdresser from Milan, that's the monster do<br>
+        monster Giuseppe heel that’s the monster shoe<br>
+        Young Money is the roster and the monster crew<br>
+        and I’m all up all up all up in the bank with the funny face<br>
+        and if I’m fake I ain't notice cause my money ain't</p>
+        </div>
+
+        <script type = "text/javascript" language = "javascript">
+		var scene12 = new ScrollMagic.Scene({
+  		triggerElement: "#twelfth", // point of execution
+  		duration: $(window).height(),
+		triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
+ 		reverse: true  // pin the element for a total of 400px
+		})
+		.setPin("#twelfth") // the element we want to pin
+		.addTo(controller);
+		</script>
+
+        <div class = "lyrics" id = "thirteenth">
+        <p class = "nicki">let me get this straight wait I’m the rookie<br>
+        but my features and my shows ten times your pay?<br>
+        50k for a verse, no album out!<br>
+        yeah my money’s so tall that <br>
+        my Barbie's gotta climb it<br>
+        hotter than a middle eastern climate<br>
+        find it Tony Matterhorn dutty wine it<br>
+        while it, Nicki on them titties when I sign it<br>
+        have these niggas so one-track minded<br>
+        but really really I don’t give a F-U-C-K<br>
+        forget barbie fuck Nicki she’s fake<br>
+        she’s on a diet but her pockets eating cheese cake <br>
+        and I’ll say Bride of Chucky is child’s play<br>
+        just killed another career it’s a mild day<br>
+        besides ‘Ye they can’t stand besides me<br>
+        I think me, you and Am* should menage Friday<br>
+        pink wig, thick ass, give em whiplash<br>
+        I think big get cash make em blink fast<br>
+        now look at what you just saw, <br>
+        this is what you live for</p>
+        </div>
+
+        <script type = "text/javascript"language = "javascript">
+		var scene13 = new ScrollMagic.Scene({
+  		triggerElement: "#thirteenth", // point of execution
+  		duration: $(window).height(),
+		triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
+ 		reverse: true  // pin the element for a total of 400px
+		})
+		.setPin("#thirteenth") // the element we want to pin
+		.addTo(controller);
+		</script>
+
+        <div class = "lyrics" id = "fourteenth">
+        <p class = "nicki" id = "ahhh">Ahhhh, I’m a motherfucking monster!</p>
+        </div>
+
+       	<script type = "text/javascript"language = "javascript">
+		var scene14 = new ScrollMagic.Scene({
+  		triggerElement: "#fourteenth", // point of execution
+  		duration: $(window).height(),
+		triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
+ 		reverse: true  // pin the element for a total of 400px
+		})
+		.setPin("#fourteenth") // the element we want to pin
+		.addTo(controller);
+
+		</script>
+
+        <div class = "lyrics" id = "fifteenth">
+        <p class = "boniver">I-I crossed the line-line<br>
+        and I’ll-I’ll let God decide-cide<br>
+        I-I wouldn’t last these shows<br>
+        so I-I am headed home</p>
+
+        <p class = "boniver">I-I crossed the line-line<br>
+        and I’ll-I’ll let God decide-cide<br>
+        I-I wouldn’t last these shows<br>
+        so I-I am headed home</p>
+        </div>
+
+        <div class = "spacer">
+        <p><a href = "video.html">Watch the video</a></p>
+        <p><a href = "../">Back to the portfolio</a></p>
+        <p>
+        Monster by Kanye West feat. Jay-Z, Rick Ross, Nicki Minaj, and Bon Iver is copyrighted by Roc-a-fella, Roc Nation, and Def Jam. None of the lyrics, sounds, or videos shown are my own.
+        </p>
+        <p id = "elevator">Back to the top</p>
+
+        <script type = "text/javascript" language = "javascript">
+		var scene15 = new ScrollMagic.Scene({
+  		triggerElement: "#fifteenth", // point of execution
+  		duration: $(window).height(),
+		triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
+ 		reverse: true  // pin the element for a total of 400px
+		})
+		.setPin("#fifteenth") // the element we want to pin
+		.addTo(controller);
+		</script>
+    </div>
+    <div class = "rightsidebar"></div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@import url("Akzidenz_Grotesk_CE_Roman/stylesheet.css");
+
+body
+{
+	text-align:center;
+	height: 100%;
+	background-color: #4c4c4e;
+	font-family:"Akzidenz Grotesk CE Roman";
+	width:960px;
+	margin:0;
+}
+
+#box
+{
+	height:400px;
+	width:400px;
+	background-color:#4CC7B3;	
+}
+
+.leftsidebar
+{
+	float:left;
+	width: 192px;
+	height:1px;
+	background-color: #4c4c4e;
+	color: #ffffff;
+	clear:left;
+}
+
+.middletext
+{
+	float:left;
+	width:576px;
+	//background-color:#228653;
+	color:#FFFFFF;
+	
+}
+
+#header
+{
+	font-family:"Akzidenz Grotesk CE Roman";
+	text-align:center;
+	font-size:168px;
+	line-height:20px;
+}
+
+.rightsidebar
+{
+	float:right;
+	width:192px;
+	//background-color:#AB29D0;
+}
+
+.player
+{
+	height:50px;
+	width:100%;
+	float:right;
+	position:fixed;
+	left:0;
+	right:0;
+	bottom:0;
+}
+
+.nicki
+{
+	color:rgba(236,0,140,1.00);
+}
+
+.jayz
+{
+	color:rgba(255,242,0,1.00);
+}
+
+.kanye
+{
+	color:rgba(255,255,255,1.00);
+}
+
+.boniver
+{
+	color:rgba(0,174,239,1.00);
+}
+
+.rickross
+{
+	color:rgba(210,35,42,1.00);
+}
+
+#monster
+{
+	font-size:108px;	
+	font-weight:bold;
+	margin:0;
+}
+
+#love
+{
+	font-size:300px;
+	font-weight:bold;
+	margin:0;
+}
+
+.spacer
+{
+	height:200px;
+	width:auto;
+}
+
+#queen
+{
+	font-size:108px;
+	font-weight:bold;
+	margin:0;	
+}
+
+#elevator
+{
+	margin-bottom:100px;
+	
+}
+
+#elevator:hover
+{
+	color:rgba(236,0,140,1.00);
+}
+
+audio
+{
+	margin-top:22px;
+	width:100%;
+}
+
+.lyrics
+{
+	height:auto;
+	margin:0;
+	
+}
+
+a
+{
+	text-decoration:none;
+	font:"Akzidenz Grotesk CE Roman";
+	color:#ffffff;
+	
+}
+
+a:hover
+{
+	color:rgba(236,0,140,1.00);
+}
+
+.lyricspacer
+{
+	height:600px;
+	
+}
+
+#ahhh
+{
+	font-size:120px;	
+	margin:0;
+	
+}
