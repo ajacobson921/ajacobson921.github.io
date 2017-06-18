@@ -4,6 +4,7 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -14,8 +15,6 @@
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.js"></script>
-    <script src="/path/to/masonry.pkgd.min.js"></script>
-
 
     <div class="navbar-fixed" id="top">
          <nav class = "blue darken-2">
@@ -34,111 +33,171 @@
             <li><a href="https://github.com/ajacobson921" target="_blank" style="target-new: tab;">Code</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
-          <a data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+          <a data-activates="slide-out" class="button-collapse"><i class="material-icons left">view_headline</i></a>
         </nav>
+      </div>
+
+    <div class = "row">
+    <!-- About Me -->
+<div class="col s12 l12">
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="img/me/headshot.jpg">
+          <div class="caption right-align">
+            <h3>Hi!</h3>
+            <h5 class="white-text">I'm Aaron.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/me/hood-copy.jpg">
+          <div class="caption left-align">
+            <h3>I do chemistry.</h3>
+            <h5 class="light grey-text text-lighten-3"></h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/me/camera.jpg">
+          <div class="caption right-align">
+            <h3>I also do photography.</h3>
+            <h5 class="light grey-text text-lighten-3"></h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/me/cenusa.jpg">
+          <div class="caption left-align">
+            <h3>Check out my website!</h3>
+            <h5 class="light grey-text text-lighten-3"></h5>
+          </div>
+        </li>
+      </ul>
     </div>
+  </div>
+    <script>
+        $(document).ready(function(){
+        $('.slider').slider();
+      });
+    </script>
 
-
-<div class = "row">
-      <div class="col s12 m4 l4">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/me/hood.jpg" class = "materialboxed z-depth-1">
-            <span class="card-title">.</span>
+  <!-- At TAMU -->
+    <div class="col s12 m6 l4">
+        <div class="card large">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/TAMU.png">
           </div>
           <div class="card-content">
-            <p>Hi! I'm Aaron. I graduated with my Bachelor of Science in Chemistry from Iowa State University. I performed synthetic organic chemistry research in <a class = "blue-text darken-2" href = "http://lstanley.public.iastate.edu/Stanley_Group/Home.html" target = "_blank" style="target-new: tab"> Dr. Levi Stanley's </a> group, researching rhodium-catalyzed hydroacylation and conjugate addition conditions.</p>
-          </div>
-          <div class="card-action waves-effect">
-            <a class = "blue-text darken-2" href = "research.html" target="_blank" style="target-new: tab">View research summaries</a>
+            <span class="card-title activator grey-text text-darken-4">I'm Aaron. I do science.<i class="material-icons right">more_vert</i></span>
+          <p><a class = "blue-text darken-2" href = "research.html" target="_blank" style="target-new: tab">Research Summaries </a></p>          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">PhD!<i class="material-icons right">close</i></span>
+            <p> I graduated with my Bachelor of Science in Chemistry from Iowa State University. I performed synthetic organic chemistry research in <a class = "blue-text darken-2" href = "http://lstanley.public.iastate.edu/Stanley_Group/Home.html" target = "_blank" style="target-new: tab"> Dr. Levi Stanley's </a> group, researching rhodium-catalyzed hydroacylation and conjugate addition conditions. I'm currently starting my PhD in Organic Chemistry at Texas A&amp;M University with <a href = "http://www.chem.tamu.edu/rgroup/burgess/"> Dr. Kevin Burgess</a>, working with the EKO process.</p>
           </div>
         </div>
       </div>
-
-      <div class="col s12 m4 l4">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/TAMU.svg" class = "materialboxed z-depth-1">
-          </div>
-          <div class="card-content">
-            <p>I'm currently working towards my PhD in Organic Chemistry from Texas A&amp;M University.
-          </div>
-          <div class="card-action waves-effect">
-            <a class = "blue-text darken-2" href = "resume.html" target="_blank" style="target-new: tab">View Resume and Other Documents</a>
-          </div>
-        </div>
-      </div>
-
-
-    <div class="col s12 m4 l4">
-      <div class="card">
-        <div class="card-image">
-          <img src="img/Resume.png" class = "materialboxed z-depth-1">
+    <!-- Resume -->
+    <div class="col s12 m6 l4">
+      <div class="card large">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="img/Resume.png">
         </div>
         <div class="card-content">
-          <p>I'm currently working towards my PhD in Organic Chemistry from Texas A&amp;M University.
+          <span class="card-title activator grey-text text-darken-4">I have done other fun jobs.<i class="material-icons right">more_vert</i></span>
+          <p><a class = "blue-text darken-2" href = "resume.html" target="_blank" style="target-new: tab">Resume and other docs</a></p>
         </div>
-        <div class="card-action waves-effect">
-          <a class = "blue-text darken-2" href = "resume.html" target="_blank" style="target-new: tab">View Resume and Other Documents</a>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">I also have a degree!<i class="material-icons right">close</i></span>
+          <p>I'm interested in positions dealing with chemical or biomedical research. I also have experience with programming in several languages and worked as a TA for the Wine, Beer, and Spirits class at Iowa State University.</p>
         </div>
       </div>
     </div>
 
-      <div class="col s12 m4 l4">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/code.png" class = "materialboxed z-depth-1">
-          </div>
-          <div class="card-content">
-            <p>I spent two years as a Computer Science student at Iowa State University and still enjoy programming. You can see my homework and personal projects here on GitHub.</p>
-          </div>
-          <div class="card-action waves-effect">
-            <a class = "blue-text darken-2" href = "https://github.com/ajacobson921" target="_blank" style="target-new: tab">View Projects on GitHub</a>
-          </div>
+    <div class="col s12 m6 l4">
+      <div class="card large">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="img/code.png">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">I like to code.<i class="material-icons right">more_vert</i></span>
+          <p><a class = "blue-text darken-2" href = "https://www.github.com/ajacobson921" target="_blank" style="target-new: tab">GitHub projects</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4"><i class="material-icons">code</i><i class="material-icons right">close</i></span>
+          <p>I spent two years as a Computer Science student at Iowa State University and still enjoy programming. You can check out my homework and personal projects (including this website) on my <a href = "https://www.github.com/ajacobson921">GitHub</a>.</p>
         </div>
       </div>
-
-        <div class="col s12 m4 l4">
-          <div class="card">
-            <div class="card-image">
-              <img src="photos/img/best/kelseybw.jpg" class = "materialboxed z-depth-1">
-            </div>
-            <div class="card-content">
-              <p>In my (sometimes rare) spare time, I enjoy taking photos and working in Photoshop. I love to take photos at night and capturing photos of people in natural settings.</p>
-            </div>
-            <div class="card-action waves-effect">
-              <a class = "blue-text darken-2" href = "photos/index.html" target="_blank" style="target-new: tab">View more</a>
-            </div>
-          </div>
-        </div>
-
-          <div class="col s12 m4 l4">
-            <div class="card">
-              <div class="card-image">
-                <img src="portfolio/img/Uberthumb.jpg" class = "materialboxed z-depth-1">
-              </div>
-              <div class="card-content">
-                <p>I spent a year and half in Iowa State's design program, designing all sorts of projects. I still do freelance design projects.</p>
-              </div>
-              <div class="card-action waves-effect">
-                <a class = "blue-text darken-2" href = "portfolio/index.html" target="_blank" style="target-new: tab">View more</a>
-              </div>
-            </div>
-        </div>
     </div>
 
-
-    <footer class="page-footer blue darken-2">
-      <div class="footer-copyright">
-        <div class="container">
-        <a href="https://www.facebook.com/ajacobson921"><img src = "img/icons/facebook.svg"></a>
-	    	<a href="https://twitter.com/ajacobson921"><img src = "img/icons/twitter.svg"></a>
-	    	<a href="https://www.instagram.com/ajacobson921/"><img src = "img/icons/instagram.svg"></a>
-	    	<a href="https://www.linkedin.com/in/ajacobson921"><img src = "img/icons/linkedin.svg"></a>
+    <div class="col s12 m6 l4">
+      <div class="card large">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="photos/img/best/kelseybw.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">I also like to take photos.<i class="material-icons right">more_vert</i></span>
+          <p><a class = "blue-text darken-2" href = "photos/index.html" target="_blank" style="target-new: tab">Photo Gallery</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4"><i class="material-icons">sd_storage</i><i class="material-icons right">close</i></span>
+          <p>In my (sometimes rare) spare time, I enjoy taking photos and working in Photoshop. I love to take photos at night and capturing photos of people in natural settings.</p>
         </div>
       </div>
-    </footer>
+    </div>
 
-    </body>
-    <script type = "text/javascript" src="js/init.js"></script>
+    <div class="col s12 m6 l4">
+      <div class="card large">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="portfolio/img/Uberthumb.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Designing is fun too.<i class="material-icons right">more_vert</i></span>
+          <p><a class = "blue-text darken-2" href = "portfolio/index.html" target="_blank" style="target-new: tab">Design Portfolio</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4"><i class="material-icons">photos</i><i class="material-icons right">close</i></span>
+          <p>I spent a year and half in Iowa State's design program, designing all sorts of projects. I still do freelance design projects.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m6 l4">
+      <div class="card large">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="img/spring_report.png">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">I write things on occasion.<i class="material-icons right">more_vert</i></span>
+          <p><a class = "blue-text darken-2" href = "https://www.medium.com/@ajacobson921" target="_blank" style="target-new: tab">Medium</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4"><i class="material-icons">description</i><i class="material-icons right">close</i></span>
+          <p>I spend a good amount of time reading and occasionally writing about foreign policy, current affairs, science, or just things going on in my life.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="page-footer blue darken-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l4 s12">
+          <h5 class="white-text">Social Media</h5>
+          <ul>
+            <li><a class="waves-effect waves-blue darken-1 btn-flat white-text" href = "https://www.facebook.com/ajacobson921">Facebook</a></li>
+            <li><a class="waves-effect waves-blue darken-1 btn-flat white-text"href="https://www.twitter.com/ajacobson921">Twitter</a></li>
+            <li><a class="waves-effect waves-blue darken-1 btn-flat white-text" href="https://www.instagram.com/ajacobson921">Instagram</a></li>
+            <li><a class="waves-effect waves-blue darken-1 btn-flat white-text" href="https://www.linkedin.com/in/ajacobson921">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2017 Aaron Jacobson. Made with <a href = "https://materializecss.com">Materialize.</a>
+      </div>
+    </div>
+  </footer>
+
+  </body>
+  <script type = "text/javascript" src="js/init.js"></script>
 </html>
