@@ -36,17 +36,53 @@
           </ul>
           <a data-activates="slide-out" class="button-collapse"><i class="material-icons left">view_headline</i></a>
       </nav>
-      </div>
-
-    <div class="row center">
-      <div class="card panel center col s8 offset-s2 z-depth-3" style = "padding:2%;"><img src = "img/Billboard - rain.jpg" class = "responsive-img z-depth-1" ></a></div>
-      <div class="card panel center col s8 offset-s2 z-depth-3" style = "padding:2%"><img src = "img/Billboard - snow-ice.jpg" class = "responsive-img z-depth-1"></div>
-      <div class="card panel center col s8 offset-s2 z-depth-3" style = "padding:2%"><img src = "img/Billboard - Spotify.jpg" class = "responsive-img z-depth-1"></div>
-      <div class="card panel center col s8 offset-s2 z-depth-3" style = "padding:2%"><img src = "img/Billboard.jpg" class = "responsive-img z-depth-1"></div>
-      <div class="card panel center col s8 offset-s2 z-depth-3" style = "padding:2%"><img src = "img/Day Uber.jpg" class = "responsive-img z-depth-1"></div>
-      <div class="card panel center col s8 offset-s2 z-depth-3" style = "padding:2%"><img src = "img/Static Uber.jpg" class = "responsive-img z-depth-1"></div>
     </div>
-
+      <div class="fullscreen slider">
+        <ul class="slides">
+          <li>
+            <img src="img/Billboard.jpg">
+            <div class="caption right-align grey-text">
+              <h3>Static</h3>
+              <h5 class="light grey-text">For all day use.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/Billboard-Spotify.jpg">
+            <div class="caption left-align">
+              <h3>Spotify</h3>
+              <h5 class="light grey-text">Play Spotify in the car.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/Billboard-rain.jpg">
+            <div class="caption right-align grey-text">
+              <h3>Weather</h3>
+              <h5 class="light grey-text">From Dark Sky</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/Billboard-snow-ice.jpg">
+            <div class="caption left-align grey-text text-darken-2">
+              <h3>Weather</h3>
+              <h5 class="grey-text text-darken-2">Including rain or snow.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/Day-Uber.jpg">
+            <div class="caption right-align">
+              <h3>Lunchtime</h3>
+              <h5 class="light grey-text text-lighten-3">Time-dependent for lunch or dinner crowd</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+        $('.slider').slider();
+        $('.spacer').height(600);
+      });
+    </script>
 
     <footer class="page-footer blue darken-2">
       <div class="container">
